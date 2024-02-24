@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 html {
@@ -70,7 +71,6 @@ nav .style-light .nav-collapse {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  list-style-type: none;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -211,7 +211,14 @@ nav .style-light .nav-collapse .nav2 .navicon img {
   text-align: center;
 }
 
-/* footer {
+.shopcards {
+  width: 100%;
+  height: 392px;
+  background-color: rgb(255, 0, 212);
+}
+
+/* 
+footer {
   background-color: aqua;
   width: 100%;
   height: 488px;
