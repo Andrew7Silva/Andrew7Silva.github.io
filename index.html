@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="shop-cards.css">
     <link rel="stylesheet" href="shop-products.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -20,33 +21,33 @@
                         <h3>Bandage</h3>
                     </div>
                     <div class="nav-collapse">
-                        <div class="nav1">
-                            <li>Home</li>
-                            <div class="nav-dropdown">
-                                <li>Shop</li>
+                        <ul class="nav1">
+                            <li><a href="home">Home</a></li>
+                            <ul class="nav-dropdown">
+                                <li><a href="shop">Shop</a></li>
                                 <li><img src="./icons/navbar/setabaixo.png" alt="vector" /></li>
-                            </div>
-                            <li>About</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                            <li>Pages</li>
-                        </div>
+                            </ul>
+                            <li><a href="about">About</a></li>
+                            <li><a href="blog">Blog</a></li>
+                            <li><a href="contact">Contact</a></li>
+                            <li><a href="pages">Pages</a></li>
+                        </ul>
                         <div class="nav2">
-                            <div class="navicon">
+                            <ul class="navicon">
                                 <li><img src="./icons/navbar/login.png" alt="login" /></li>
                                 <li>Login / Register</li>
-                            </div>
-                            <div class="navicon">
+                            </ul>
+                            <ul class="navicon">
                                 <li><img src="./icons/navbar/lupa.png" alt="lupa" /></li>
-                            </div>
-                            <div class="navicon">
+                            </ul>
+                            <ul class="navicon">
                                 <li><img src="./icons/navbar/carrinho.png" alt="carrinho" /></li>
                                 <li>1</li>
-                            </div>
-                            <div class="navicon">
+                            </ul>
+                            <ul class="navicon">
                                 <li><img src="./icons/navbar/coracao.png" alt="coracao" /></li>
                                 <li>1</li>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -63,7 +64,6 @@
             <div class="ctrl-nex">
                 <img src="./icons/carousel/ctrl-nex.png" alt="setaDir">
             </div>
-
             <div>
                 <div class="inner">
                     <div class="item">
@@ -114,28 +114,24 @@
         <section>
             <div class="shop-product">
                 <div class="row">
-                    <div class="md" style="background-image: url('/icons/shopproducts/cadamarelo.jpg');">
+                    <div id="elemPortifolio" class="md"
+                        style=" background-image:url('/icons/shopproducts/cadamarelo.jpg');">
                         <div class="content">
-
                             <h6 class="a">FURNITURE</h6>
                             <h6 class="b">5 Items</h6>
-
                         </div>
                     </div>
-                    <div class="lg">
+                    <div id="elemTabProduct" class="lg">
                         <div class="container">
-                            <div class="navbar">
-
+                            <nav class="navbar">
                                 <div class="main-content">
                                     <h5>BESTSELLER PRODUCTS</h5>
                                 </div>
                                 <div class="style-light">
                                     <div class="lista">
-
                                         <h6 style="color: #23A6F0;">Men</h6>
                                         <h6>Women</h6>
                                         <h6>Accessories</h6>
-
                                     </div>
                                     <div class="setas">
                                         <div class="position">
@@ -144,27 +140,115 @@
                                             </div>
                                         </div>
                                         <div class="position" style="border: 1px solid #737373;">
-                                            <li class="next">
+                                            <div class="next">
                                                 <img src="./icons/shopproducts/buttonNex.png" alt="Seta Próximo">
-                                            </li>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
+                            </nav>
                             <div class="linha"></div>
-                            <div class="corp"></div>
+                            <div class="corp">
+                                <div id="tabTabGroup" style="width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;">
+                                    <div id="tabContent" class="tab-content">
+                                        <div class="tab-one">
+                                            <div id="groupCards" class="group-cards">
+                                                <div class="container-item">
+                                                    <div class="card-item">
+                                                        <img src="./icons/shopproducts/sorvete.png" alt="Sorvete">
+                                                        <div id="frameItem" class="frame-item">
+                                                            <h5 style="color: #252B42;">Graphic Design</h5>
+                                                            <li> <a href="englishDepartment"
+                                                                    style="text-decoration: none; color: #737373; font-size: 14px;">
+                                                                    English
+                                                                    Department</a></li>
+                                                            <ul>
+                                                                <li style="color: #BDBDBD;">$16.48</li>
+                                                                <li style="color: #23856D;">$6.48</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-item">
+                                                    <div class="card-item">
+                                                        <img src="./icons/shopproducts/maca.png" alt="Maçã">
+                                                        <div id="frameDupl1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-item">
+                                                    <div class="card-item">
+                                                        <img src="./icons/shopproducts/porco.png" alt="Porco">
+                                                        <div id="frameDupl2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="groupDupl" class="group-cards"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
             </div>
         </section>
+        <!-- <section>
+            <div>
+                shop-product
+            </div>
+        </section> -->
+        <!-- <section id="elemDupl">
+            <div class="shop-product">
+                <div class="row">
+                    <!-- <div class="content">
+                            <h6 class="a">FURNITURE</h6>
+                            <h6 class="b">5 Items</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </main>
 
 
     <!-- <footer>Hello World Compass!!</footer> -->
+    <script>
+
+        let frameOriginal = document.getElementById("frameItem");
+
+        let frameArray = [document.getElementById("frameDupl1"), document.getElementById("frameDupl2")]
+
+        let framesDuplicados = []
+
+        const duplicarFrame = () => {
+
+            for (i = 0; i < frameArray.length; i++) {
+                let clone = frameOriginal.cloneNode(true);
+                frameArray[i].appendChild(clone)
+                framesDuplicados.push(clone)
+            }
+            return framesDuplicados;
+        };
+
+        duplicarFrame()
+
+        const groupOriginal = document.getElementById("groupCards");
+        const groupElement = document.getElementById("groupDupl");
+
+        const duplicarGroup = () => {
+            const groupDuplicado = groupOriginal.cloneNode(true)
+            return groupElement.appendChild(groupDuplicado)
+        }
+        duplicarGroup()
+
+    </script>
 </body>
 
 </html>

@@ -29,32 +29,28 @@ nav {
   height: 91px;
 }
 
-nav h1 {
-  margin-block: 0;
-}
-
 nav .container {
   height: 91px;
   display: flex;
   justify-content: center;
 }
 
-nav .style-light {
-  width: 1322px;
+nav .container .style-light {
+  width: 1084px;
   height: 91px;
   left: 60px;
-  gap: 300px;
+  gap: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav .style-light .nav-brand {
+nav .container .style-light .nav-brand {
   left: 136px;
   gap: 10px;
 }
 
-nav .style-light .nav-brand h3 {
+nav .container .style-light .nav-brand h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -62,7 +58,7 @@ nav .style-light .nav-brand h3 {
   text-align: left;
 }
 
-nav .style-light .nav-collapse {
+nav .container .style-light .nav-collapse {
   width: 815px;
   height: 58px;
   top: 16px;
@@ -78,15 +74,19 @@ nav .style-light .nav-collapse {
   text-align: center;
 }
 
-nav .style-light .nav-collapse .nav1 {
+nav .container .style-light .nav-collapse .nav1 {
   gap: 15px;
   display: flex;
   flex-direction: row;
   color: #737373;
   background-color: #ffffff;
 }
+nav .container .style-light .nav-collapse .nav1 a {
+  text-decoration: none;
+  color: #737373;
+}
 
-nav .style-light .nav-collapse .nav1 .nav-dropdown {
+nav .container .style-light .nav-collapse .nav1 .nav-dropdown {
   display: grid;
   grid-template-columns: auto auto;
   flex-direction: row;
@@ -100,7 +100,7 @@ nav .style-light .nav-collapse .nav1 .nav-dropdown {
   color: #252b42;
 }
 
-nav .style-light .nav-collapse .nav2 {
+nav .container .style-light .nav-collapse .nav2 {
   gap: 20px;
   display: flex;
   flex-direction: row;
@@ -108,7 +108,7 @@ nav .style-light .nav-collapse .nav2 {
   background-color: #ffffff;
 }
 
-nav .style-light .nav-collapse .nav2 .navicon {
+nav .container .style-light .nav-collapse .nav2 .navicon {
   display: grid;
   grid-template-columns: auto auto;
   flex-direction: row;
@@ -116,7 +116,7 @@ nav .style-light .nav-collapse .nav2 .navicon {
   gap: 3px;
 }
 
-nav .style-light .nav-collapse .nav2 .navicon img {
+nav .container .style-light .nav-collapse .nav2 .navicon img {
   padding-top: 4px;
 }
 
