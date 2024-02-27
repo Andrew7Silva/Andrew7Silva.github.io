@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="shop-cards.css">
     <link rel="stylesheet" href="shop-products.css">
+    <link rel="stylesheet" href="shop-products4.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="./main.js"></script>
 </head>
@@ -121,7 +122,7 @@
                             <h6 class="b">5 Items</h6>
                         </div>
                     </div>
-                    <div id="elemTabProduct" class="lg">
+                    <div id="tabProduct" class="lg">
                         <div class="container">
                             <nav class="navbar">
                                 <div class="main-content">
@@ -199,28 +200,87 @@
             </div>
             </div>
         </section>
-        <!-- <section>
-            <div>
-                shop-product
+        <section>
+            <div class="most-popular">
+                <div class="container">
+                    <div class="first-row">
+                        <img src="./icons/mostpopular/motociclista.png" alt="Motociclista">
+                        <div class="col-md">
+                            <div class="product-card">
+                                <h5>MOST POPULAR</h5>
+                                <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                                </p>
+                                <div class="carne-container"><img src="./icons/mostpopular/carne.png"
+                                        alt="Bandeja de Carne"></div>
+                                <li> <a href="englishDepartment"
+                                        style="text-decoration: none; color: #252B42; font-size: 14px;">English
+                                        Department</a></li>
+                                <ul>
+                                    <li style="color: #BDBDBD;">$16.48</li>
+                                    <li style="color: #23856D;">$6.48</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="second-row">
+                        <div class="col-lg">
+                            <div class="flex-row">
+                                <h2>1.</h2>
+                                <div id="flexRow">
+                                    <h6 class="h6first">Easy to use</h6>
+                                    <h6 class="h6second">Things on a very small that you have any direct</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg">
+                            <div class="flex-row">
+                                <h2>2.</h2>
+                                <div id="flexRowDupl"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg">
+                            <div class="flex-row">
+                                <h2>3.</h2>
+                                <div id="flexRowDupl1"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="flex-row">
+                                <h2>4.</h2>
+                                <div id="flexRowDupl2"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </section> -->
-        <!-- <section id="elemDupl">
+        </section>
+        <section>
             <div class="shop-product">
                 <div class="row">
-                    <!-- <div class="content">
+                    <div id="tabProductDupl" class="lg">
+                    </div>
+                    <div id="elemPortifolio" class="md"
+                        style=" background-image:url('/icons/shopproducts/cadrosquinha.jpg');">
+                        <div class="content">
                             <h6 class="a">FURNITURE</h6>
                             <h6 class="b">5 Items</h6>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+            </div>
+        </section>
     </main>
 
 
     <!-- <footer>Hello World Compass!!</footer> -->
     <script>
 
+        // Duplicar Card Item
         let frameOriginal = document.getElementById("frameItem");
 
         let frameArray = [document.getElementById("frameDupl1"), document.getElementById("frameDupl2")]
@@ -239,6 +299,7 @@
 
         duplicarFrame()
 
+        // Duplicar Grupo de Cartas
         const groupOriginal = document.getElementById("groupCards");
         const groupElement = document.getElementById("groupDupl");
 
@@ -247,6 +308,36 @@
             return groupElement.appendChild(groupDuplicado)
         }
         duplicarGroup()
+
+        // Duplicar Tabela de Produtos
+        const tabProductOriginal = document.getElementById("tabProduct");
+        const tabProductElement = document.getElementById("tabProductDupl");
+
+        const duplicarTabProduct = () => {
+            const tabProductDuplicado = tabProductOriginal.cloneNode(true)
+            return tabProductElement.appendChild(tabProductDuplicado)
+        }
+        duplicarTabProduct()
+
+        // Duplicar flexRow
+        const flexRowOriginal = document.getElementById("flexRow");
+        const flexRowArray = [
+            document.getElementById("flexRowDupl"),
+            document.getElementById("flexRowDupl1"),
+            document.getElementById("flexRowDupl2")
+        ];
+        let flexRowDuplicados = []
+
+        const duplicarFlexRow = () => {
+
+            for (i = 0; i < flexRowArray.length; i++) {
+                let clone = flexRowOriginal.cloneNode(true);
+                flexRowArray[i].appendChild(clone);
+                flexRowDuplicados.push(clone);
+            }
+            return flexRowDuplicados;
+        }
+        duplicarFlexRow()
 
     </script>
 </body>
