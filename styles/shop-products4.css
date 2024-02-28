@@ -26,7 +26,6 @@
 .most-popular .container .first-row .col-md {
   width: 401px;
   height: 649px;
-  padding: 80px, 0px, 80px, 0px;
   gap: 30px;
   display: flex;
   align-items: center;
@@ -157,13 +156,13 @@
 
 /* Segundo MOST POPULAR */
 
-.most-popular {
+.most-popular2 {
   width: 100%;
   height: 886px;
   background-color: #ffffff;
 }
 
-.most-popular .container {
+.most-popular2 .container {
   width: 100%;
   height: 886px;
   gap: 30px;
@@ -172,7 +171,7 @@
   justify-content: center;
 }
 
-.most-popular .container .first-row {
+.most-popular2 .container .first-row {
   width: 1069px;
   height: 784px;
   display: flex;
@@ -181,7 +180,7 @@
   justify-content: space-between;
 }
 
-.most-popular .container .first-row .col-md {
+.most-popular2 .container .first-row .col-md {
   width: 401px;
   height: 784px;
   gap: 30px;
@@ -191,7 +190,7 @@
   background: #fafafa;
 }
 
-.most-popular .container .first-row .col-md .product-card {
+.most-popular2 .container .first-row .col-md .product-card {
   width: 348px;
   height: 604px;
   gap: 19px;
@@ -201,7 +200,7 @@
   justify-content: space-between;
 }
 
-.most-popular .container .first-row .col-md .product-card h5 {
+.most-popular2 .container .first-row .col-md .product-card h5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -210,7 +209,7 @@
   color: #252b42;
 }
 
-.most-popular .container .first-row .col-md .product-card p {
+.most-popular2 .container .first-row .col-md .product-card p {
   width: 280px;
   height: 60px;
   font-size: 14px;
@@ -221,7 +220,7 @@
   color: #737373;
 }
 
-.most-popular .container .first-row .col-md .product-card li a {
+.most-popular2 .container .first-row .col-md .product-card li a {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -230,7 +229,7 @@
   color: #252b42;
 }
 
-.most-popular .container .first-row .col-md .product-card ul {
+.most-popular2 .container .first-row .col-md .product-card ul {
   width: 108px;
   height: 34px;
   gap: 5px;
@@ -240,13 +239,13 @@
   flex-direction: row;
 }
 
-.most-popular .container .first-row .col-md .product-card .carne-container {
+.most-popular2 .container .first-row .col-md .product-card .carne-container {
   width: 348px;
   height: 300px;
   margin-top: 40px;
 }
 
-.most-popular .container .first-row .col-md .product-card .selection-colors {
+.most-popular2 .container .first-row .col-md .product-card .selection-colors {
   width: 82.23px;
   height: 16px;
   gap: 6.08px;
@@ -256,7 +255,7 @@
   flex-direction: row;
 }
 
-.most-popular .container .first-row .col-md .product-card .sales {
+.most-popular2 .container .first-row .col-md .product-card .sales {
   width: 83px;
   height: 24px;
   color: #737373;
@@ -266,7 +265,7 @@
   flex-direction: row;
 }
 
-.most-popular .container .first-row .col-md .product-card .sales h6 {
+.most-popular2 .container .first-row .col-md .product-card .sales h6 {
   height: 24px;
   font-size: 14px;
   font-weight: 700;
@@ -275,7 +274,13 @@
   text-align: left;
 }
 
-.most-popular .container .first-row .col-md .product-card .selection-colors li {
+.most-popular2
+  .container
+  .first-row
+  .col-md
+  .product-card
+  .selection-colors
+  li {
   border-radius: 100%;
   width: 16px;
   height: 16px;

@@ -6,9 +6,13 @@
 
 html {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
+  width: 1519.2px;
   height: 6956px;
   top: -2048px;
   left: 4813px;
@@ -147,10 +151,16 @@ nav .container .style-light .nav-collapse .nav2 .navicon img {
   margin-left: 1450px;
 }
 
-.carousel .indicators {
+.carousel .container-indicators {
   position: absolute;
   margin-top: 590px;
-  margin-left: 46.3%;
+  margin-left: 700px;
+}
+.carousel .container-indicators .indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .carousel .inner {
@@ -209,10 +219,4 @@ nav .container .style-light .nav-collapse .nav2 .navicon img {
   line-height: 32px;
   letter-spacing: 0.1px;
   text-align: center;
-}
-
-.shopcards {
-  width: 100%;
-  height: 392px;
-  background-color: rgb(255, 0, 212);
 }
