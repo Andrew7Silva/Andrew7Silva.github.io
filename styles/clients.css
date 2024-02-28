@@ -1,0 +1,17 @@
+.clients {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.clients .container {
+  width: 1050px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

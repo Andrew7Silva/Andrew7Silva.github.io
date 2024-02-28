@@ -63,14 +63,14 @@ nav .container .style-light .nav-collapse {
   height: 58px;
   top: 16px;
   left: 364px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
@@ -128,7 +128,7 @@ nav .container .style-light .nav-collapse .nav2 .navicon img {
   border-radius: 5px;
   border-color: #dedede;
   color: #ffffff;
-  background-image: url("./icons/carousel/batata.jpg");
+  background-image: url("../icons/carousel/batata.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,10 +216,3 @@ nav .container .style-light .nav-collapse .nav2 .navicon img {
   height: 392px;
   background-color: rgb(255, 0, 212);
 }
-
-/* 
-footer {
-  background-color: aqua;
-  width: 100%;
-  height: 488px;
-} */
