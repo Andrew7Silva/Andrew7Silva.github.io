@@ -1,7 +1,17 @@
-// Duplicar Card Item
-let frameOriginal = document.getElementById("frameItem");
+// Duplicar Text de Card Item
+const textOriginal = document.getElementById("textOriginal");
 
-let frameArray = [
+const textCardElement = document.getElementById("textDulp");
+
+const duplicarTextCard = () => {
+  const textCardDulp = textOriginal.cloneNode(true);
+  return textCardElement.appendChild(textCardDulp);
+};
+
+// Duplicar Card Item
+const frameOriginal = document.getElementById("frameItem");
+
+const frameArray = [
   document.getElementById("frameDupl1"),
   document.getElementById("frameDupl2"),
   document.getElementById("frameDupl3"),
@@ -76,8 +86,9 @@ const duplicarTextBlog = () => {
   return textBlogDuplicados;
 };
 
-// Chamada das Funções
+// Chamada das Funções para duplicação dos elementos
 window.onload = () => {
+  duplicarTextCard();
   duplicarFrame();
   duplicarGroup();
   duplicarTabProduct();

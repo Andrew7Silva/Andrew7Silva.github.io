@@ -45,7 +45,7 @@ main {
   background-color: rgb(238, 255, 0);
 }
 
-.shop-cards .container .row .card-item .text {
+.shop-cards .container .row .card-item div {
   margin-left: 23px;
   gap: 27px;
   display: flex;
@@ -54,7 +54,7 @@ main {
   text-align: left;
 }
 
-.shop-cards .container .row .card-item .text .a {
+.shop-cards .container .row .card-item div h6 .a {
   color: #737373;
   font-size: 14px;
   font-weight: 400;
@@ -63,7 +63,7 @@ main {
   text-align: left;
 }
 
-.shop-cards .container .row .card-item .text .b {
+.shop-cards .container .row .card-item div h2 .b {
   color: #252b42;
   font-size: 24px;
   font-weight: 700;
@@ -72,7 +72,7 @@ main {
   text-align: left;
 }
 
-.shop-cards .container .row .card-item .text .c {
+.shop-cards .container .row .card-item div h6.c {
   color: #252b42;
   font-size: 12px;
   font-weight: 400;

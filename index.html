@@ -7,7 +7,7 @@
     <title>E-commerce UI</title>
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/shop-cards.css">
-    <link rel="stylesheet" href="./styles/shop-products.css">
+    <link rel="stylesheet" href="./styles/shop-products25.css">
     <link rel="stylesheet" href="./styles/shop-products4.css">
     <link rel="stylesheet" href="./styles/shop-products15.css">
     <link rel="stylesheet" href="./styles/clients.css">
@@ -29,7 +29,7 @@
                             <li><a href="/">Home</a></li>
                             <ul class="nav-dropdown">
                                 <li><a href="/">Shop</a></li>
-                                <li><img src="./icons/navbar/setabaixo.png" alt="vector" /></li>
+                                <li><img src="./icons/navbar/setabaixo.png" alt="Seta para baixo" /></li>
                             </ul>
                             <li><a href="/">About</a></li>
                             <li><a href="/">Blog</a></li>
@@ -78,7 +78,7 @@
                             <h4>We know how large objects will act, but things on a small scale just do not act that
                                 way.
                             </h4>
-                            <button class="btn-car">
+                            <button>
                                 <h3>Start Now</h3>
                             </button>
                         </div>
@@ -93,25 +93,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="card-item" style="background-image: url('/icons/shopcards/sorveteinv.png');">
-                            <ul class="text">
+                            <div>
                                 <h6 class="a">Your Space</h6>
                                 <h2 class="b">Unique<br>Life</h2>
                                 <h6 class="c">Explore Items</h6>
-                            </ul>
+                            </div>
                         </div>
                         <div class="card-item" style="background-image: url('/icons/shopcards/macainv.png');">
-                            <ul class="text">
+                            <div id="textOriginal">
                                 <h6 class="a">Ends Today</h6>
                                 <h2 class="b">Elements<br>Style</h2>
                                 <h6 class="c">Explore Items</h6>
-                            </ul>
+                            </div>
                         </div>
-                        <div class="card-item" style="background-image: url('/icons/shopcards/porcoinv.png');">
-                            <ul class="text">
-                                <h6 class="a">Ends Today</h6>
-                                <h2 class="b">Elements<br>Style</h2>
-                                <h6 class="c">Explore Items</h6>
-                            </ul>
+                        <div id="textDulp" class="card-item"
+                            style="background-image: url('/icons/shopcards/porcoinv.png');">
                         </div>
                     </div>
                 </div>
@@ -216,8 +212,7 @@
                                 </p>
                                 <div class="carne-container"><img src="./icons/mostpopular/carne.png"
                                         alt="Bandeja de Carne"></div>
-                                <li> <a href="englishDepartment"
-                                        style="text-decoration: none; color: #252B42; font-size: 14px;">English
+                                <li> <a href="/" style="text-decoration: none; color: #252B42; font-size: 14px;">English
                                         Department</a></li>
                                 <ul>
                                     <li style="color: #BDBDBD;">$16.48</li>
@@ -384,7 +379,7 @@
                 </ul>
             </div>
         </section>
-        <section id="blog">
+        <section>
             <div class="blog">
                 <div class="container">
                     <div class="first-row">
@@ -402,11 +397,11 @@
                                     </div>
                                 </div>
                                 <div id="blogText" class="blog-text">
-                                    <ul>
+                                    <div class="blog-tags">
                                         <small style="color: #8EC2F2;">Google</small>
                                         <small>Trending</small>
                                         <small>New</small>
-                                    </ul>
+                                    </div>
                                     <h4>Loudest à la Madison #1 (L'integral)</h4>
                                     <p>We focus on ergonomics and meeting <br>
                                         you where you work. It's only a <br>
@@ -460,16 +455,15 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="start">
             <div class="container">
                 <div class="row">
-                    <ul>
+                    <div>
                         <h3>Consulting Agency For Your Business</h3>
                         <p>the quick fox jumps over the lazy dog</p>
-                    </ul>
-                    <div>
+                    </div>
+                    <div class="button">
                         <button>Contact Us</button>
                     </div>
                 </div>
@@ -538,22 +532,20 @@
         </div>
         <div class="end">
             <div class="container">
-                <li>Made With Love By Finland All Right Reserved</li>
+                <h6>Made With Love By Finland All Right Reserved</h6>
                 <div class="container-social-media">
                     <ul class="social-media">
-                        <li><a href="/"><img src="./icons/footer/facebook.png" alt=""></a>
+                        <li><a href="/"><img src="./icons/footer/facebook.png" alt="Ícone Facebook"></a>
                         </li>
-                        <li><a href="/"><img src="./icons/footer/instagram.png" alt=""></a>
+                        <li><a href="/"><img src="./icons/footer/instagram.png" alt="Ícone Instagram"></a>
                         </li>
-                        <li><a href="/"><img src="./icons/footer/twitter.png" alt=""></a></li>
+                        <li><a href="/"><img src="./icons/footer/twitter.png" alt="Ícone Twitter"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-
-    <script src="./main.js"></script>
+    <script src="./duplicates.js"></script>
 </body>
 
 </html>

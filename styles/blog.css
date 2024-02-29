@@ -115,7 +115,7 @@
   flex-direction: column;
 }
 
-.blog .container .second-row .blog-body .content-card .blog-text ul {
+.blog .container .second-row .blog-body .content-card .blog-text .blog-tags {
   width: 160px;
   height: 16px;
   gap: 15px;
@@ -126,7 +126,14 @@
   flex-direction: row;
 }
 
-.blog .container .second-row .blog-body .content-card .blog-text small {
+.blog
+  .container
+  .second-row
+  .blog-body
+  .content-card
+  .blog-text
+  .blog-tags
+  small {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;

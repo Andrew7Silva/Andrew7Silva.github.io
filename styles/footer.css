@@ -31,14 +31,6 @@ footer {
 }
 
 .start .container .row div {
-  width: 236px;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.start .container .row ul {
   width: 509px;
   height: 62px;
   display: flex;
@@ -63,7 +55,15 @@ footer {
   text-align: left;
 }
 
-.start .container .row button {
+.start .container .row .button {
+  width: 236px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start .container .row .button button {
   width: 160px;
   height: 52px;
   border: none;
@@ -216,7 +216,7 @@ footer {
   justify-content: space-between;
 }
 
-.end .container li {
+.end .container h6 {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
